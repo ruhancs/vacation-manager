@@ -1,0 +1,33 @@
+{
+    "name": "workingmind",
+    "version": "0.0.1",
+    "description": "",
+    "author": "",
+    "private": true,
+    "license": "UNLICENSED",
+    "scripts": {
+      "start:docker": "npm run dev --prefix client & npm run migrations --prefix server & npm run start:dev --prefix server"
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+  
+    },
+    "jest": {
+      "moduleFileExtensions": [
+        "js",
+        "json",
+        "ts"
+      ],
+      "rootDir": "src",
+      "testRegex": ".*\\.spec\\.ts$",
+      "transform": {
+        "^.+\\.(t|j)s$": "ts-jest"
+      },
+      "collectCoverageFrom": [
+        "**/*.(t|j)s"
+      ],
+      "coverageDirectory": "../coverage",
+      "testEnvironment": "node"
+    }
+  }
